@@ -1,0 +1,63 @@
+.oneLeft ul {
+  list-style: none;
+}
+.oneLeft {
+  margin-top: 10px;
+  min-width: 310px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding-top: 10px;
+  background-color: white;
+}
+.category li {
+  display: flex;
+  width: 235px;
+  align-items: center;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  /* font-size: 18px; */
+}
+.category li:hover {
+  background-color: blueviolet;
+  color: white;
+  border-radius: 10px;
+}
+.category img {
+  width: 25px;
+  padding-right: 10px;
+}
+
+.sectionOne {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 70px;
+  background-color: aliceblue;
+}
+
+@media only screen and (max-width: 1324px) {
+  .sectionOne {
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 828px) {
+  .sectionOne {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .oneLeft {
+    max-width: 100px;
+  }
+}
+@media only screen and (max-width: 648px) {
+  .sectionOne {
+    margin-top: 150px;
+  }
+}
+

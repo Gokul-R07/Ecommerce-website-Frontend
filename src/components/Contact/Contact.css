@@ -1,0 +1,58 @@
+.contactSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px;
+  background-color: black;
+  color: white;
+}
+.companyDetails button img {
+  width: 30px;
+}
+.companyDetails button {
+  background-color: blueviolet;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.companyDetails button:hover {
+  background-color: white;
+  color: black;
+}
+.companyDetails {
+  flex: 2;
+}
+.aboutUs,
+.contactUs {
+  flex: 1;
+}
+.customerCare {
+  flex: 1.3;
+}
+
+.contactSection li {
+  padding: 8px;
+  color: lightgrey;
+}
+.contactUs {
+  margin-top: -30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contactSection {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .companyDetails button {
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (max-width: 522px) {
+  .contactSection {
+    gap: 30px;
+  }
+}

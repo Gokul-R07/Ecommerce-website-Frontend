@@ -1,0 +1,14 @@
+input {
+  outline: none;
+  padding: 7px 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+.Btn{
+  border: none;
+  border-radius: 10px;
+}
+body{
+  min-width: 420px;
+}

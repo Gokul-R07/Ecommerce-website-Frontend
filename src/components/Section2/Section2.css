@@ -1,0 +1,61 @@
+.fdImages {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+}
+.fdCard {
+  /* border: 2px solid blueviolet; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.fdCard:hover {
+  transform: scale(1.05);
+}
+.flashDeals {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+.fdContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 30px 60px;
+}
+.flashIcon {
+  width: 60px;
+}
+.fdCard button {
+  color: blueviolet;
+  padding: 4px 12px;
+  border: none;
+  /* background-color: sa; */
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.fdCard button:hover {
+  background-color: blueviolet;
+  color: white;
+  box-shadow: none;
+}
+#flashIcon {
+  color: gold;
+  margin-left: 60px;
+  margin-right: 5px;
+}
+.dealOne {
+  padding-bottom: 70px;
+}
+
+@media only screen and (max-width: 360px) {
+  .fdContainer {
+    padding: 20px 60px;
+  }
+}

@@ -1,0 +1,69 @@
+.login .left label {
+  width: 150px;
+  display: inline-block;
+  padding: 10px;
+}
+.login .left {
+  background-color: #f2deba;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 60px;
+  border-radius: 10px;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background-color: aliceblue;
+}
+
+.login .register-btn,
+.login .home-btn {
+  padding: 7px 30px;
+  border-radius: 10px;
+  border: none;
+}
+.login .register-btn {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.login #login-btn {
+  cursor: pointer;
+  margin-left: 160px;
+  background-color: #9d3c72;
+  color: white;
+  padding: 5px 20px;
+}
+.login .register-btn {
+  cursor: pointer;
+}
+.login .error-message {
+  background-color: red;
+  padding: 6px 43px;
+  margin-left: 150px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  color: white;
+}
+
+@media only screen and (max-width: 518px) {
+  .login .left {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  .login .left {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 648px) {
+  .login {
+    margin-top: 150px;
+  }
+}

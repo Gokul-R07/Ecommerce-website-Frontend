@@ -1,0 +1,83 @@
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  box-shadow: -1px 15px 17px -8px rgb(0 0 0 / 10%);
+  background-color: blueviolet;
+  color: white;
+  width: 100%;
+}
+.navBar .brandName {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+.titleBox {
+  flex: 3;
+  display: flex;
+  align-items: center;
+}
+.navLinks {
+  flex: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.navLinks li {
+  padding: 10px 20px;
+  list-style: none;
+  cursor: pointer;
+  border-radius: 10%;
+  font-size: 16px;
+}
+.navLinks li img {
+  width: 25px;
+}
+.navLinks li:hover {
+  background-color: white;
+  color: blueviolet;
+}
+.searchLens {
+  width: 25px;
+  margin-left: 20px;
+}
+.searchBar {
+  flex: 2;
+  border: 2px solid black;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+.searchBar input {
+  margin-left: 5px;
+  padding: 10px 20px;
+  border: none;
+  width: 90%;
+}
+.searchBar input:focus {
+  outline: none;
+}
+
+.navLinks li {
+  color: white;
+}
+
+.linkStyle {
+  text-decoration: none;
+}
+@media only screen and (max-width: 648px) {
+  .navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    height: 150px;
+  }
+}

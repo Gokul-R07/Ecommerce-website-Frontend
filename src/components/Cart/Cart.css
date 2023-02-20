@@ -1,0 +1,120 @@
+.cartSection {
+  display: flex;
+  background-color: aliceblue;
+  min-height: 500px;
+}
+.cartListBox {
+  flex: 2;
+}
+.cartList {
+  width: 95%;
+  padding: 50px 70px;
+}
+.cartSummary {
+  flex: 1;
+  display: flex;
+}
+.cartList img {
+  width: 80px;
+}
+.cartItem {
+  display: flex;
+  background-color: white;
+  border-radius: 16px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.cartItem:hover {
+  transform: scale(1.02);
+}
+.cartTotal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 200px;
+  margin-top: 150px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.cartList h1 {
+  text-align: center;
+}
+.cartTotal button {
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  padding: 3px 10px;
+}
+.cartTotal button:hover {
+  background-color: blueviolet;
+}
+.countBox {
+  padding: 3px 20px;
+}
+.cartItemFeature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.deleteBin {
+  cursor: pointer;
+  height: 25px;
+  object-fit: contain;
+}
+.itemRight {
+  flex: 3;
+}
+.cartImg {
+  flex: 0.6;
+  display: flex;
+  align-items: center;
+}
+.plusBtn {
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+.minusBtn {
+  border-radius: 5px;
+  background-color: white;
+}
+.plusBtn:hover,
+.minusBtn:hover {
+  background-color: blueviolet;
+  color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  .cartSection {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cartTotal {
+    margin: 30px;
+  }
+  .cartList {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 648px) {
+  .cartSection {
+    margin-top: 150px;
+  }
+}
+@media only screen and (max-width: 525px) {
+  .cartList {
+    width: 95%;
+    padding: 10px;
+  }
+}
