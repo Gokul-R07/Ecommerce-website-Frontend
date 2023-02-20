@@ -8,7 +8,7 @@ import "./Slideshow.css";
 const Slideshow = () => {
   return (
     <div className="slideShow">
-      <Carousel interval={null} fade variant="dark">
+      <Carousel  fade variant="dark">
         <Carousel.Item className="slideShow1">
           <img className="d-block w-100 slideImg " src={b1} alt="First slide" />
         </Carousel.Item>
