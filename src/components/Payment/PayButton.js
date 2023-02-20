@@ -4,7 +4,8 @@ import axios from "axios";
 const PayButton = ({ cartItem }) => {
   const handlePay = async (e) => {
     try {
-      const url = "https://ecommerce-website-backend-one.vercel.app/checkout/stripe-payment";
+      const url =
+        "https://ecommerce-website-backend-one.vercel.app/checkout/stripe-payment";
       const { data } = await axios.post(url, { cartItem });
       window.location.assign(data.url);
     } catch (error) {
@@ -13,7 +14,7 @@ const PayButton = ({ cartItem }) => {
   };
   return (
     <>
-      <button onClick={handlePay}>Procced to Pay</button>
+      <button onClick={handlePay}>Proceed to Pay</button>
     </>
   );
 };
