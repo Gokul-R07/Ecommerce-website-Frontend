@@ -15,9 +15,9 @@ const Navbar = () => {
   return (
     <div>
       <nav className="navBar">
-      <div className="titleBox">
+        <div className="titleBox">
           <Link to="/" className="brandName">
-            <h3>Shopify</h3>
+            <h3>ShopQuick</h3>
           </Link>
           <div className="searchBar">
             <input type="text" placeholder="Search product name" />
