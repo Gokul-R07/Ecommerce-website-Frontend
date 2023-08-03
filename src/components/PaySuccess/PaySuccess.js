@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./PaySuccess.css";
 import axios from "axios";
+import paySuccess from "../../images/paySuccess.mp4";
 
 const PaySuccess = ({ setCartItem, cartItem }) => {
   const total = cartItem.reduce(
@@ -35,8 +36,14 @@ const PaySuccess = ({ setCartItem, cartItem }) => {
   }, []);
   return (
     <div className="payInfo">
-      <h6>Payment Success</h6>
-      <p>Continue Shopping!!!</p>
+      <video
+        className="paySuccessVideo"
+        src={paySuccess}
+        autoPlay
+        muted
+        loop
+      ></video>
+      <h3>Continue Shopping🛍️!</h3>
     </div>
   );
 };

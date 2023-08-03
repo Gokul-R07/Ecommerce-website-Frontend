@@ -2,6 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import lens from "../../images/icons/find.png";
 import { Link } from "react-router-dom";
+import logo from "../../images/common/logo.png"
 
 const Navbar = () => {
   const user = JSON.parse(localStorage.getItem("user"));
@@ -17,7 +18,8 @@ const Navbar = () => {
       <nav className="navBar">
         <div className="titleBox">
           <Link to="/" className="brandName">
-            <h3>ShopQuick</h3>
+            <img src={logo} alt=""  className="logo"/> 
+            <h3>ShopQuick</h3> 
           </Link>
           <div className="searchBar">
             <input type="text" placeholder="Search product name" />

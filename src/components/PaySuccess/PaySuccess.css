@@ -1,7 +1,17 @@
 .payInfo {
   height: 600px;
-  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
 }
+.paySuccessVideo {
+  outline: none !important;
+  border: none !important;
+  width: 300px; 
+}
+
 @media only screen and (max-width: 648px) {
   .payInfo {
     margin-top: 150px;

@@ -12,6 +12,8 @@
   flex: 0.8;
   display: flex;
   justify-content: center;
+  gap: 2px;
+  align-items: center;
   cursor: pointer;
   color: white;
   text-decoration: none;
@@ -70,6 +72,10 @@
 
 .linkStyle {
   text-decoration: none;
+}
+.logo {
+  height: 80px;
+  object-fit: cover;
 }
 @media only screen and (max-width: 648px) {
   .navBar {
